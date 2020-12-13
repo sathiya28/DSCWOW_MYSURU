@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="Festival.html">GALLERY</a>
+  <a href="registration.html">TRANSPORTATION</a>
+        <a class="active" href="doctor.html">SHARE YOUR EXPERIENCE</a>
+        <a href="fund.html">FUNDS AND YOUR RATING</a>
+  
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>The city of Mysuru has a long tradition of celebrating the Dasara festival with grandeur and pomp to mark the festival. The Dasara festival in Mysuru completed 409th anniversary in the year 2019</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2016</h2>
+      <p>As of 2011, Mysuru city had an estimated population of 920,550 consisting of 461,042 males and 459,508 females, making it the third most populous city in Karnataka[3][5] Mysore urban agglomeration is the second largest urban agglomeration in the state[59] and is home to 1,060,120 people, consisting of 497,132 males and 493,762 females.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2015</h2>
+      <p>The kingdom reached the height of its military power and dominion in the latter half of the 18th century under the de facto rulers Hyder Ali and his son Tipu Sultan. The latter demolished parts of Mysore to remove legacies of the Wodeyar dynasty.[29]:257 During this time, Mysore kingdom came into conflict with the Marathas, the British and the Nizam of Golconda, leading to the four Anglo-Mysore wars, success in the first two of which was followed by defeat in the third and fourth. After Tipu Sultan's death in the Fourth Anglo-Mysore War </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2012</h2>
+      <p>The Hindu festival of Dasara, Navratri and Vijayadashami celebrates the victory of good over evil. It was the day in the Hindu legends when Goddess Chamundeshwari (Durga) killed the demon Mahishasura.[4] Mahishasura is the demon whose slaying by the Goddess gave the city the name Mysuru. </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2011</h2>
+      <p>Mysore is located at 12.30°N 74.65°E and has an average altitude of 770 metres (2,526 ft).[39] It is spread across an area of 286.42 km2 (111 sq mi)[4]:4 at the base of the Chamundi Hills in the southern region of Karnataka. Mysore is the southernmost city of Karnataka and is a neighbouring city of the states of Kerala and Tamil Nadu in the south, flanked by the state cities Mercara, Chamarajanagara, and Mandya. People in and around Mysore extensively use Kannada as a medium of language. Mysore has several lakes, such as the Kukkarahalli, the Karanji, and the Lingambudhi lakes.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2007</h2>
+      <p>Mysore has a tropical savanna climate (Aw) bordering on a hot semi-arid climate (BSh) under the Köppen climate classification. The main seasons are Summer from March to May, the monsoon season from June to October and winter from November to February.[39] The highest temperature recorded in Mysore was 39.4 °C </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<div style="padding-left:16px">
+  <h2></h2>
+  <p>Mysore Dasara is the Nadahabba (state festival) of the state of Karnataka in India. It is a 10-day festival, starting with nine nights called Navaratri and the last day being Vijayadashami. The festival is observed on the tenth day in the Hindu calendar month of Ashvin, which typically falls in the Gregorian months of September and October</p>
+</div>
+
+</body>
+</html>
